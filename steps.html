@@ -1,122 +1,123 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/spacing.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  </head>
-  <body>
-      <div class="steps">
-        <label class="steps-container">
-          <input class="old-radio" type="radio" checked="checked" name="radio1">
-          <span class="new-radio"></span>
-        </label> 
-        <span class="line"></span>
-        <label class="steps-container">
-          <input class="old-radio" type="radio" checked="checked" name="radio2">
-          <span class="new-radio"><span>Select Plan</span></span>
-        </label> 
-        <span class="line"></span>
-        <label class="steps-container">
-          <input class="old-radio" type="radio" checked="checked" name="radio3">
-          <span class="new-radio"><span>Traveler Detail</span></span>
-        </label> 
-        <span class="line"></span>
-        <label class="steps-container">
-          <input class="old-radio" type="radio"  name="radio4">
-          <span class="new-radio"><span>Confirm</span></span>
-        </label> 
-        <span class="line"></span>
-        <label class="steps-container">
-          <input class="old-radio" type="radio"  name="radio5">
-          <span class="new-radio"><span>Payment</span></span>
-        </label> 
-      </div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <div class="steps m-t-32 m-l-32 m-r-32 m-b-32">
+    <label class="steps-container">
+      <input class="old-radio" type="radio" checked="checked" name="radio1">
+      <span class="new-radio"></span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="old-radio" type="radio" checked="checked" name="radio2">
+      <span class="new-radio"><span>Select Plan</span></span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="old-radio" type="radio" checked="checked" name="radio3">
+      <span class="new-radio"><span>Traveler Detail</span></span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="old-radio" type="radio" name="radio4">
+      <span class="new-radio"><span>Confirm</span></span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="old-radio" type="radio" name="radio5">
+      <span class="new-radio"><span>Payment</span></span>
+    </label>
+  </div>
+</body>
+
 </html>
 
 <style>
+  .steps {
+    display: flex;
+    ß justify-content: center;
+  }
 
-.steps {
-  display:flex;
-  margin:30px 0;
-  justify-content: center;
-}
+  .steps .line {
+    position: relative;
+    left: -3px;
+    width: 117px;
+    height: 2px;
+    background-color: #1991eb;
+    padding: 1px;
+    margin-top: 10px;
+  }
 
-.steps .line {
-  position:relative;
-  left:-3px;
-  width: 117px;
-  height: 2px;
-  background-color: #1991eb;
-  padding:1px;
-  margin-top:10px;
-}
+  .steps-container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  }
 
-.steps-container {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-}
-
-.steps-container .old-radio {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
+  .steps-container .old-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
 
 
-.new-radio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right:0;
-  height: 25px;
-  width: 25px;
-  background-color: white;
-  border-radius: 50%;
-  border: solid 2px #3d70b2;
-}
+  .new-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 2px #3d70b2;
+  }
 
-.steps-container:hover .old-radio ~ .new-radio {
-  background-color: white;
-}
+  .steps-container:hover .old-radio~.new-radio {
+    background-color: white;
+  }
 
-.steps-container .old-radio:checked ~ .new-radio {
-  background-color: white ;
-}
+  .steps-container .old-radio:checked~.new-radio {
+    background-color: white;
+  }
 
-.new-radio:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
+  .new-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 
-.steps-container .old-radio:checked ~ .new-radio:after {
-  display: block;
-}
+  .steps-container .old-radio:checked~.new-radio:after {
+    display: block;
+  }
 
-.steps-container .new-radio:after {
-top: 3px;
-left: 3px;
-width: 18px;
-height: 18px;
-border-radius: 50%;
-background: #1991eb;
-}
+  .steps-container .new-radio:after {
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1991eb;
+  }
 
-.new-radio span {
-  position: absolute;
-  font-family: OpenSans;
-  font-size: 14px;
-  top: 50px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
- }
+  .new-radio span {
+    position: absolute;
+    font-family: OpenSans;
+    font-size: 14px;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 </style>
