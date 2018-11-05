@@ -7,31 +7,52 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/spacing.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="footer">
-    <div class="grid-2 footer-contact">
-      <p class="footer-title">Help available, on Line, Email and calls:</p>
-      <div class="footer-content">
-        <p>@aegonbrokerth</p>
+    <div class="footer-container">
+      <div class="grid-2 m-l-56">
+        <p class="footer-title">Help available, on Line, Email and calls:</p>
+        <div class="footer-content">
+          <p><span class="mdi mdi-whatsapp m-r-16"></span>@aegonbrokerth</p>
+          <p><span class="mdi mdi-email m-r-16"></span>help@aegonbroker.co.th</p>
+          <p><span class="mdi mdi-phone m-r-16"></span>02 163 2820</p>
+          <p class="footer-content-hour">Mon-Fri. 9:00am - 7:00pm, except Public holidays</p>
+        </div>
+      </div>
+      <div class="grid-1">
+        <p class="footer-title">Quick Links</p>
+        <div class="footer-content">
+          <p>FAQs</p>
+          <p>Purchase guide</p>
+          <p>Policy documents</p>
+          <p>Terms of use</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+      <div class="grid-1">
+        <p class="footer-title">Safe and secure payments</p>
+        <div class="footer-content">
+          <p class="m-t-32">
+            <span class="mdi mdi-credit-card"></span>
+            <span class="mdi mdi-credit-card"></span>
+            <span class="mdi mdi-credit-card"></span>
+            <span class="mdi mdi-credit-card"></span>
+          </p>
+          <div class="footer-lock">
+            <span class="mdi mdi-lock"></span>
+            <div>
+              <p>Your details aren’t stored.</p>
+              <p>All information is encrypted.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="grid-1 footer-links">
-      <p class="footer-title">Quick Links</p>
-      <div class="footer-content">
-        <p>FAQs</p>
-        <p>Purchase guide</p>
-        <p>Policy documents</p>
-        <p>Terms of use</p>
-        <p>Privacy policy</p>
-      </div>
-    </div>
-    <div class="grid-1 footer-payment">
-      <p class="footer-title">Safe and secure payments</p>
-      <div class="footer-content">
-        <p>@aegonbrokerth</p>
-      </div>
+    <div class="footer-copyright">
+      © Aegon Direct Non-life Insurance Broker - License No. ว00018/2553. All Rights Reserved.
     </div>
   </div>
 </body>
@@ -48,25 +69,49 @@
   }
 
   .footer {
-    display: flex;
     font-family: 'Noto Sans', sans-serif;
     background-color: #000000;
     color: #ffffff;
   }
 
-  .footer-contact {}
-
-  .footer-links {}
-
-  .footer-payment {}
+  .footer-container {
+    display: flex;
+    padding: 36px;
+  }
 
   .footer-title {
     font-size: 14px;
+    margin-bottom: 16px;
   }
 
   .footer-content {
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.5px;
+  }
+
+  .footer-content-hour {
+    font-size: 11px;
+  }
+
+  .mdi-credit-card {
+    font-size: 48px;
+  }
+
+  .footer-lock {
+    font-size: 13px;
+    display: flex;
+  }
+
+  .mdi-lock {
+    font-size: 28px;
+    margin-right: 8px;
+  }
+
+  .footer-copyright {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 48px;
+    padding-bottom: 16px;
   }
 </style>
