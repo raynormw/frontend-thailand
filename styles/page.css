@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f3efef;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .header {
@@ -52,6 +52,7 @@ body {
   float: right;
   border-radius: 50%;
   text-align: center;
+  color: #0067b5;
 }
 
 .header-right .head-menu {
@@ -62,13 +63,13 @@ body {
 
 .header-right .head-menu li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 .header-right .head-menu li a {
   text-decoration: none;
-  color: black;
-  cursor: pointer
+  color: white;
+  cursor: pointer;
 }
 
 .steps {
@@ -94,7 +95,7 @@ body {
   font-size: 22px;
 }
 
-.steps-container .old-radio {
+.steps-container .base-radio {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -112,11 +113,11 @@ body {
   border: solid 2px #3d70b2;
 }
 
-.steps-container:hover .old-radio~.new-radio {
+.steps-container:hover .base-radio ~ .new-radio {
   background-color: white;
 }
 
-.steps-container .old-radio:checked~.new-radio {
+.steps-container .base-radio:checked ~ .new-radio {
   background-color: white;
 }
 
@@ -126,7 +127,7 @@ body {
   display: none;
 }
 
-.steps-container .old-radio:checked~.new-radio:after {
+.steps-container .base-radio:checked ~ .new-radio:after {
   display: block;
 }
 
@@ -173,6 +174,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background: white;
   width: 304px;
+  position: relative;
 }
 
 .card .card-header {
@@ -193,7 +195,10 @@ body {
   letter-spacing: 0.5px;
   color: #4f1e85;
   position: relative;
+}
 
+.is-center { 
+  text-align: center;
 }
 
 .card .card-footer {
@@ -264,8 +269,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.5px;
   color: #ffffff;
-
-
 }
 
 .btn {
@@ -281,12 +284,174 @@ body {
   border: #1991eb;
 }
 
+.is-full {
+  width: 100%;
+  position:absolute;
+  bottom : 0;
+  left: 0;
+}
+
+
+.cross-icon {
+  width: 28px;
+  height: 28px;
+  border: solid 2px #ffffff;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 20px;
+  top: -15;
+  right: -10;
+  float: right;
+ 
+}
+
+.cross-icon a{
+  color:white;
+  text-align: center; 
+  cursor: pointer;
+  display: block;
+}
+
+.btn-size {
+  width: 168px;
+  height: 40px;
+}
+
+/* Footer */
+
+.grid-2 {
+  flex: 2;
+}
+
+.grid-1 {
+  flex: 1;
+}
+
+.footer {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  padding: 36px;
+}
+
+.footer-title {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.footer-content {
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.footer-content-hour {
+  font-size: 11px;
+}
+
+.mdi-credit-card {
+  font-size: 48px;
+}
+
+.footer-lock {
+  font-size: 13px;
+  display: flex;
+}
+
+.mdi-lock {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.footer-copyright {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 48px;
+  padding-bottom: 16px;
+}
+
 .column {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.main-width {
+  margin-right: 400px;
 }
 
 .is-left {
   float: left;
+}
+
+.is-opacity {
+  opacity: 0.68;
+}
+
+.is-cream {
+  background: #fff3e0;
+}
+.full-length {
+  width: 100%;
+}
+
+.base-select {
+  width: 97px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.base-input {
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #ececee;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.base-label {
+  font-family: NotoSans;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #353c43;
+}
+
+.base-small {
+  width: 181px;
+}
+
+.base-medium {
+  width: 254px;
+}
+
+.base-large {
+  width: 374px;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.note {
+  width: 195px;
+  height: 32px;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+  color: #4e2372;
 }
