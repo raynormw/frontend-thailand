@@ -262,10 +262,9 @@ body {
   padding: 20px 0 0 20px;
 }
 
-.main .main-title {
+.main-title {
   width: 329px;
   height: 32px;
-  font-family: NotoSansDisplay;
   font-size: 27px;
   font-weight: 800;
   font-style: normal;
