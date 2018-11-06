@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f3efef;
+  background-color: #f9f5f2;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -155,7 +155,7 @@ body {
 .content {
   width: 100%;
   margin-top: 50px;
-  background: #eee;
+  background: #f9f5f2;
 }
 
 .content .sidebar {

@@ -11,27 +11,27 @@
 <body>
   <div class="steps m-t-32 m-l-32 m-r-32 m-b-32">
     <label class="steps-container">
-      <input class="old-radio" type="radio" checked="checked" name="radio1">
+      <input class="base-radio" type="radio" checked="checked" name="radio1">
       <span class="new-radio"></span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="old-radio" type="radio" checked="checked" name="radio2">
+      <input class="base-radio" type="radio" checked="checked" name="radio2">
       <span class="new-radio"><span>Select Plan</span></span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="old-radio" type="radio" checked="checked" name="radio3">
+      <input class="base-radio" type="radio" checked="checked" name="radio3">
       <span class="new-radio"><span>Traveler Detail</span></span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="old-radio" type="radio" name="radio4">
+      <input class="base-radio" type="radio" name="radio4">
       <span class="new-radio"><span>Confirm</span></span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="old-radio" type="radio" name="radio5">
+      <input class="base-radio" type="radio" name="radio5">
       <span class="new-radio"><span>Payment</span></span>
     </label>
   </div>
@@ -63,12 +63,11 @@
     font-size: 22px;
   }
 
-  .steps-container .old-radio {
+  .steps-container .base-radio {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-
 
   .new-radio {
     position: absolute;
@@ -82,11 +81,11 @@
     border: solid 2px #3d70b2;
   }
 
-  .steps-container:hover .old-radio~.new-radio {
+  .steps-container:hover .base-radio~.new-radio {
     background-color: white;
   }
 
-  .steps-container .old-radio:checked~.new-radio {
+  .steps-container .base-radio:checked~.new-radio {
     background-color: white;
   }
 
@@ -96,7 +95,7 @@
     display: none;
   }
 
-  .steps-container .old-radio:checked~.new-radio:after {
+  .steps-container .base-radio:checked~.new-radio:after {
     display: block;
   }
 
