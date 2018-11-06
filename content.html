@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="content-container">
+      <div class="content-title m-b-16">
+        <p>Credit Card Payment</p>
+      </div>
+      <div class="content-card m-b-24">
+        <p class="m-b-8">Card Number</p>
+        <input type="text" class="m-b-24" placeholder="XXXX XXXX XXXX XXXX">
+        <p class="m-b-8">Name on Card</p>
+        <input type="text" class="m-b-24" placeholder="XXXX XXXX XXXX XXXX">
+        <div class="form-group">
+          <div class="form-group-content m-r-40">
+              <p class="m-b-8">Valid Till</p>
+              <input type="text" placeholder="MM YY">
+          </div>
+          <div class="form-group-content">
+              <p class="m-b-8">CVV <span class="mdi mdi-help-circle"></span></p>
+              <input type="text" placeholder="XXX">
+          </div>
+        </div>
+      </div>
+      <div class="content-button m-b-56">
+        <button class="m-b-24"><span class="mdi mdi-lock"></span>Pay 890 THB</button>
+        <a href="#">Pay using different method</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<style media="screen">
+   html {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  /* Content section */
+  .content {
+    background-image: linear-gradient(to bottom, #3b2569, #4e2372);
+    width: 100%;
+    height: 518px;
+    border-radius: 8px;
+    margin-bottom: -8px;
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .content-container {
+    padding: 26px;
+  }
+
+  .content-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 225px;
+  }
+  
+  .content-title p{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+
+  .content-card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 307px;
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 27px 30px 40px 23px;
+  }
+
+  .content-card p { 
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #353c43;
+  }
+
+  .form-group {
+    display: flex;
+  }
+
+  .form-group-content {
+    flex-basis: 40%;
+  }
+
+  .mdi-help-circle {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #ccc;
+  }
+
+  input{
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    border:solid 1px #ccc;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .content-button {
+    text-align: center;
+  }
+
+  .content-button button {
+    width: 232px;
+    height: 36px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    background-color: #2198f0;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-button a {
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.45;
+    letter-spacing: 0.5px;
+  }
+
+  .mdi-lock {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+</style>
