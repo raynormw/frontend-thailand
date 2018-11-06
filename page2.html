@@ -25,6 +25,38 @@
     </div>
   </div>
 
+  <!-- Steps -->
+  <div class="steps">
+    <label class="steps-container">
+      <input class="base-radio" type="radio" name="radio1" checked>
+      <span class="new-radio"></span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="base-radio" type="radio" name="radio2" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Select Plan</span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="base-radio" type="radio" name="radio3" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Traveler Detail</span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="base-radio" type="radio" name="radio4" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Confirm</span>
+    </label>
+    <span class="line"></span>
+    <label class="steps-container">
+      <input class="base-radio" type="radio" name="radio5" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Payment</span>
+    </label>
+  </div>
+
   <!-- Footer -->
   <div class="footer">
     <div class="footer-container">
@@ -88,6 +120,10 @@
 <style media="screen">
   html {
     font-family: 'Noto Sans', sans-serif;
+  }
+
+  body {
+    background-color: #f9f5f2;
   }
 
   .grid-2 {
@@ -170,6 +206,90 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
+  }
+
+  /* Steps pattern */
+  .steps {
+    display: flex;
+    justify-content: center;
+    margin: 32px 32px 80px;
+  }
+
+  .steps .line {
+    position: relative;
+    left: -3px;
+    width: 117px;
+    height: 2px;
+    background-color: #1991eb;
+    padding: 1px;
+    margin-top: 10px;
+  }
+
+  .steps-container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  .steps-container .base-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .new-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 2px #3d70b2;
+  }
+
+  .steps-container:hover .base-radio~.new-radio {
+    background-color: white;
+  }
+
+  .steps-container .base-radio:checked~.new-radio {
+    background-color: white;
+  }
+
+  .new-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .steps-container .base-radio:checked~.new-radio:after {
+    display: block;
+  }
+
+  .steps-container .new-radio:after {
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1991eb;
+  }
+
+  .steps-text {
+    position: absolute;
+    font-size: 14px;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #1a91eb;
+    min-width: 250px;
+    text-align: center;
   }
 
   /* Footer section */
