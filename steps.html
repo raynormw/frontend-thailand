@@ -9,30 +9,34 @@
 </head>
 
 <body>
-  <div class="steps m-t-32 m-l-32 m-r-32 m-b-32">
+  <div class="steps">
     <label class="steps-container">
-      <input class="base-radio" type="radio" checked="checked" name="radio1">
+      <input class="base-radio" type="radio" name="radio1" checked>
       <span class="new-radio"></span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="base-radio" type="radio" checked="checked" name="radio2">
-      <span class="new-radio"><span>Select Plan</span></span>
+      <input class="base-radio" type="radio" name="radio2" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Select Plan</span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="base-radio" type="radio" checked="checked" name="radio3">
-      <span class="new-radio"><span>Traveler Detail</span></span>
+      <input class="base-radio" type="radio" name="radio3" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Traveler Detail</span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="base-radio" type="radio" name="radio4">
-      <span class="new-radio"><span>Confirm</span></span>
+      <input class="base-radio" type="radio" name="radio4" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Confirm</span>
     </label>
     <span class="line"></span>
     <label class="steps-container">
-      <input class="base-radio" type="radio" name="radio5">
-      <span class="new-radio"><span>Payment</span></span>
+      <input class="base-radio" type="radio" name="radio5" checked>
+      <span class="new-radio"></span>
+      <span class="steps-text">Payment</span>
     </label>
   </div>
 </body>
@@ -43,6 +47,7 @@
   .steps {
     display: flex;
     justify-content: center;
+    margin: 32px 32px 80px;
   }
 
   .steps .line {
@@ -108,9 +113,8 @@
     background: #1991eb;
   }
 
-  .new-radio span {
+  .steps-text {
     position: absolute;
-    font-family: OpenSans;
     font-size: 14px;
     top: 50px;
     left: 50%;
@@ -118,5 +122,8 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    color: #1a91eb;
+    min-width: 250px;
+    text-align: center;
   }
 </style>
