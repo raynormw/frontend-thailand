@@ -11,6 +11,21 @@
 </head>
 
 <body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <img class="img" src="img/aegon.png" alt="">
+      <div class="header-right">
+        <ul class="head-menu">
+          <li><a><span class="shape-round">?</span></a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">เปลี่ยนภาษา</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <div class="footer">
     <div class="footer-container">
       <div class="grid-2 m-l-56">
@@ -81,6 +96,80 @@
 
   .grid-1 {
     flex: 1;
+  }
+
+  /* Header section */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img {
+    width: 100px;
+    margin-left: 64px;
+    margin-right: 32px;
+  }
+
+  .img-msig {
+    width: 50px;
+  }
+
+  .header-right {
+    position: relative;
+    background: #0067b5;
+    width: 90%;
+    height: 80px;
+    transform: skewX(20deg);
+  }
+
+  .header-right:after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    background: #0067b5;
+    -webkit-transform: skewX(-20deg);
+  }
+
+  .shape-round {
+    border: 1px solid white;
+    background: white;
+    width: 20px;
+    height: 20px;
+    float: right;
+    border-radius: 50%;
+    text-align: center;
+    color: #0067b5;
+  }
+
+  .head-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    float: right;
+    margin-top: 24px;
+    margin-right: 80px;
+    transform: skewX(-20deg);
+  }
+
+  .header-right .head-menu li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .header-right .head-menu li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
   }
 
   /* Footer section */
