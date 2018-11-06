@@ -16,10 +16,21 @@
       <div class="grid-2 m-l-56">
         <p class="footer-title">Help available, on Line, Email and calls:</p>
         <div class="footer-content">
-          <p><span class="mdi mdi-whatsapp m-r-16"></span>@aegonbrokerth</p>
-          <p><span class="mdi mdi-email m-r-16"></span>help@aegonbroker.co.th</p>
-          <p><span class="mdi mdi-phone m-r-16"></span>02 163 2820</p>
-          <p class="footer-content-hour">Mon-Fri. 9:00am - 7:00pm, except Public holidays</p>
+          <p class="line-container">
+            <img src="img/line.png" alt="line_icon">
+            @aegonbrokerth
+          </p>
+          <p>
+            <span class="mdi mdi-email m-r-16"></span>
+            help@aegonbroker.co.th
+          </p>
+          <p>
+            <span class="mdi mdi-phone m-r-16"></span>
+            02 163 2820
+          </p>
+          <p class="footer-content-hour">
+            Mon-Fri. 9:00am - 7:00pm, except Public holidays
+          </p>
         </div>
       </div>
       <div class="grid-1">
@@ -36,10 +47,10 @@
         <p class="footer-title">Safe and secure payments</p>
         <div class="footer-content">
           <p class="m-t-32">
-            <span class="mdi mdi-credit-card"></span>
-            <span class="mdi mdi-credit-card"></span>
-            <span class="mdi mdi-credit-card"></span>
-            <span class="mdi mdi-credit-card"></span>
+            <img src="img/visa.png" alt="visa_icon">
+            <img src="img/mastercard.png" alt="mastercard_icon">
+            <img src="img/american_express.png" alt="american_express_icon">
+            <img src="img/discover.png" alt="discover_icon">
           </p>
           <div class="footer-lock">
             <span class="mdi mdi-lock"></span>
@@ -88,6 +99,16 @@
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.5px;
+  }
+
+  .line-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .line-container img {
+    width: 20px;
+    margin-right: 18px;
   }
 
   .footer-content-hour {
