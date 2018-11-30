@@ -377,8 +377,16 @@ body {
   border: #1991eb;
 }
 
+.is-sunrise {
+  background-image: linear-gradient(to bottom, #f7981c, #f76b1c);
+}
+
 .is-pink {
   color: #9013fe;
+}
+
+.is-white {
+  color: #ffffff;
 }
 
 .is-full {
@@ -411,8 +419,9 @@ body {
 }
 
 .btn-size {
-  width: 168px;
-  height: 40px;
+  width: 105px;
+  height: 46px;
+  border-radius: 4px;
 }
 
 /* Footer */
@@ -560,3 +569,4 @@ body {
   letter-spacing: 0.5px;
   color: #4e2372;
 }
+
