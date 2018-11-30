@@ -13,8 +13,8 @@
     <div class="header-top">
       <img class="img" src="img/aegon.png" alt="">
       <div class="header-right">
-        <ul class="head-menu">
-          <li><a><span class="shape-round">?</span></a></li>
+        <ul class="head-menu m-t-8">
+          <li><a href=""> <span class="shape-round">?</span></a></a></li>
           <li><a href="">Help</a></li>
           <li><a href="">เปลี่ยนภาษา</a></li>
         </ul>
@@ -26,12 +26,14 @@
 </html>
 
 <style>
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 103, 181, 0);
+}
 
   .header-top {
     display: flex;
@@ -39,44 +41,56 @@
     align-items: center;
   }
 
-  .img {
-    width: 100px;
-    margin-left: 64px;
-    margin-right: 32px;
-  }
+.img {
+  width: 100px;
+  float: right;
+  margin-left: 5%;
+}
 
   .img-msig {
     width: 50px;
   }
 
-  .header-right {
-    position: relative;
-    background: #0067b5;
-    width: 90%;
-    height: 80px;
-    transform: skewX(20deg);
-  }
+.header-right {
+  position: relative;
+  background: #0067b5;
+  width: 85%;
+  height: 79px;
+  transform: skewX(20deg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-  .header-right:after {
-    content: "";
-    position: absolute;
-    right: -30px;
-    width: 50px;
-    height: 50px;
-    background: #0067b5;
-    -webkit-transform: skewX(-20deg);
-  }
+.header-right:after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  width: 50px;
+  height: 79px;
+  background: #0067b5;
+  -webkit-transform: skewX(-20deg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-  .shape-round {
-    border: 1px solid white;
-    background: white;
-    width: 20px;
-    height: 20px;
-    float: right;
-    border-radius: 50%;
-    text-align: center;
-    color: #0067b5;
-  }
+.shape-round {
+  border: 1px solid white;
+  background: white;
+  width: 20px;
+  height: 20px;
+  float: right;
+  border-radius: 50%;
+  text-align: center;
+  color: #0067b5;
+  /* transform: skewX(-20deg); */
+}
+
+.head-menu {
+  display: flex;
+
+}
 
   .head-menu {
     display: flex;
