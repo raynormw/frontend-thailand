@@ -40,10 +40,25 @@
         </div>
       </div>
     </div>
-    
-    <button class="btn is-blue btn-size m-b-64">Next</button>
+    <button class="btn is-sunrise is-white btn-size-large m-t-32">Review & Confirm</button>
   </div>
 </body>
+
+<style>
+  .btn-size {
+  width: 242px;
+  height: 46px;
+  border-radius: 4px;
+}
+
+.is-sunrise {
+  background-image: linear-gradient(to bottom, #f7981c, #f76b1c);
+}
+
+.is-white {
+  color: #ffffff;
+}
+</style>
 <script>
 $(document).ready(function() {
   $("#countries").msDropdown();
