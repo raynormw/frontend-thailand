@@ -1,0 +1,52 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link rel="stylesheet" href="styles/page.css">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="country_dropdown/js/jquery/jquery-1.8.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/dd.css" />
+  <script src="country_dropdown/js/msdropdown/jquery.dd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/flags.css" />
+</head>
+<body>
+  <div class="form">
+    <div class="main-width">
+      <div class="card full-length ">
+        <div class="title m-l-24 m-t-24 p-t-24">
+          Vehicle Detail
+        </div>
+        <div class="card-content m-t-8 m-r-16 m-l-24 m-b-8 p-b-24 p-r-24">
+          <form action="">
+            <label for="" class="base-label m-b-24">License Plate</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="text" name="" id="" placeholder="XX XXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Registered in Province</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-large" type="text" name="" id="" placeholder="XX XXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Chassis No</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="text" name="" id="" placeholder="XXXXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Insurrance Start Date</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="date" name="" id="" placeholder="Last name">
+              <div class="m-t-8" style="font-size:12px">Validity 365 days, will expire on :</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <button class="btn is-blue btn-size m-b-64">Next</button>
+  </div>
+</body>
+<script>
+$(document).ready(function() {
+  $("#countries").msDropdown();
+})
+</script>
+</html>
