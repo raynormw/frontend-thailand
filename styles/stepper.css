@@ -1,48 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/spacing.css">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-</head>
-
-<body>
-  <div class="stepper">
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active">
-        <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab" aria-controls="stepper-step-1" role="tab" title="Step 1">
-          <span class="round-tab"><span class="round-inside"></span></span>
-          <div class="step-title">Applicant Info</div>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2">
-          <span class="round-tab"></span>
-          <div class="step-title">Vehicle Info</div>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3">
-          <span class="round-tab"></span>
-          <div class="step-title">Confirm</div>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Complete">
-          <span class="round-tab"></span>
-          <div class="step-title">Payment</div>
-        </a>
-      </li>
-    </ul>
-  </div>
-</body>
-
-</html>
-
-<style>
- .stepper {
+.stepper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +14,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  width: 100%;
+  width: 50%;
 }
 
 .nav-tabs > li {
@@ -90,6 +46,14 @@
   padding: 0;
   color: #f1f1f1;
 }
+
+
+
+
+.nav-tabs .completed:after {
+  background:#0067b5;
+}
+
 
 .nav-tabs li:after {
   content: '';
@@ -137,9 +101,7 @@
   display: inline-block;
   border-radius: 25px;
   background: #0067b5;
-  position: absolute;
-  top:2;
-  left: 2;
+  margin: 2px;
 }
 
 .step-title {
@@ -184,4 +146,9 @@
   min-width: 250px;
   text-align: center;
 }
-</style>
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav {
+   width:70%;
+  }
+}

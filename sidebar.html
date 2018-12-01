@@ -2,7 +2,7 @@
 <head>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/spacing.css">
-    <link rel="stylesheet" href="styles/page.css">
+    <!-- <link rel="stylesheet" href="styles/page.css"> -->
     <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
@@ -10,61 +10,58 @@
 <body>
   <div class="content">
     <div class="sidebar m-l-24 m-t-24">
-      <div class="row m-t-24">
+      <div class="grid-sidebar m-t-24">
         <div class="card m-b-24 p-b-8">
           <div class="card-header">
-            <span class="card-title">Trip Details</span>
+            <span class="card-title">Car Details</span>
           </div>
           <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
             <table class="card-table">
-              <tr>
-                <td>Travel To</td>
-                <td>Europe</td>
+              <tr class="font-normal">
+                <td class="p-b-8 p-t-8">Brand</td>
+                <td>America</td>
               </tr>
-              <tr aligns="">
-                <td>No of Persons</td>
+              <tr class="">
+                <td class="p-b-8 p-t-8">Model</td>
                 <td>2</td>
               </tr>
-              <tr>
-                <td>Start Date</td>
-                <td>20/10/2018</td>
+              <tr class="">
+                <td class="p-b-8 p-t-8">Year</td>
+                <td>2009</td>
               </tr>
-              <tr>
-                <td>End Date</td>
-                <td>24/10/2018</td>
+              <tr class="">
+                <td class="p-b-8 p-t-8">CC</td>
+                <td>xxxxx</td>
               </tr>
             </table>
           </div>
         </div>
         <div class="card m-b-24 p-b-8">
           <div class="card-header">
-            <span class="card-title">Plan Details</span>
+            <span class="card-title">Choosen Plan</span>
           </div>
           <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
             <table class="card-table">
-              <tr class="border_bottom spacer">
-                <td><img class="img-msig" src="img/msig.png"></td>
-                <td style="width:50%">
-                  Base: Easy-2
-                  <span class="mini-icon">i</span>
-                  <span style="font-size:20px; font-weight:bold">740 บาท</span>
-                </td>
+              <tr class="">
+                <td class="p-b-8 p-t-8"><img class="img-msig" src="img/msig.png"></td>
+                <td>Plan Name</td>
               </tr>
               <tr class="border_bottom">
-                <td>Add On: <br>
-                  Extra Flight Delay Cover
-                  250,000THB/Traveler
-                </td>
-                <td>150 บาท</td>
+                <td class="p-b-8 p-t-8">Sum insured</td>
+                <td>X</td>
               </tr>
               <tr class="border_bottom">
-                <td colspan="2">Applied Offers:<br>
-                  get 100/- starbucks coupon / traveler
-                </td>
+                <td class="p-b-8 p-t-8" colspan="2">With Compulsory insurance</td>
+              </tr>
+              <tr>
+                <td class="p-t-8" colspan="2">Premium</td>
               </tr>
               <tr class="total">
-                <td>Total</td>
-                <td>890 บาท</td>
+                <td class="p-t-8">Total</td>
+                <td>1,215 ฿</td>
+              </tr>
+              <tr>
+                <td class="p-t-8">Private/ not for commercial use</td>
               </tr>
             </table>
           </div>
@@ -74,4 +71,180 @@
   </div>
 </body>
 
+
+<style>
+.content {
+  width: 100%;
+  margin-top: 50px;
+  background: #f1f4f8;
+}
+
+/* .content .sidebar {
+  float: left;
+  height: 100%;
+} */
+
+.sidebar {
+  display: flex;
+  width: 30%;
+}
+
+.grid-sidebar {
+  flex: 1;
+}
+
+.content .main {
+  margin-left: 350px;
+  border-right: 2px solid #333;
+  border-left: none;
+  background: #0067b5;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 304px;
+  position: relative;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card .card-header {
+  position: relative;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #0067b5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card .title {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #0067b5;
+  position: relative;
+  
+}
+
+.is-center {
+  text-align: center;
+}
+
+.card .card-footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.little-font {
+  position: absolute;
+  top: 20;
+  right: 10;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #4f1e85;
+}
+
+.card .card-header .card-title {
+  color: white;
+  margin-left: 10px;
+}
+
+.card .card-content .card-table {
+  width: 100%;
+  font-size: 12px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  color: #354052;
+}
+
+.card .card-table td:nth-child(2) {
+  text-align: right;
+}
+
+.more-detail {
+  padding-inline-start: 40px;
+}
+
+.mini-icon {
+  border: 1px solid #1991eb;
+  background: white;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  line-height: 13px;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.border_bottom {
+  border-bottom: solid 1px rgba(151, 151, 151, 0.31);
+}
+
+.total {
+  font-family: NotoSans;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #0067b5;
+}
+
+.color-blue {
+  color: #0067b5;
+}
+
+.font-12 {
+  font-family: NotoSans;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.font-14 {
+  font-family: NotoSans;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.font-22 {
+  font-family: NotoSans;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.font-12, .font-14, .font-22 {
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.img-msig {
+  width: 60px;
+}
+
+</style>
 </html>

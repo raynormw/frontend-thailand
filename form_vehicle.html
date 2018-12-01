@@ -1,0 +1,142 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link rel="stylesheet" href="styles/page.css">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="country_dropdown/js/jquery/jquery-1.8.2.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/dd.css" />
+  <script src="country_dropdown/js/msdropdown/jquery.dd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/flags.css" />
+</head>
+<body>
+  <div class="form">
+    <div class="main-width">
+      <div class="card-form full-length">
+        <div class="title m-l-24 m-t-24 p-t-24">
+          Vehicle Details
+        </div>
+        <div class="card-content m-t-8 m-r-16 m-l-24 m-b-8 p-b-24 p-r-24">
+          <form action="">
+            <label for="" class="base-label m-b-24">License Plate</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="text" name="" id="" placeholder="XX XXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Registered in Province</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-large" type="text" name="" id="" placeholder="XX XXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Chassis No</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="text" name="" id="" placeholder="XXXXXX">
+            </div>
+            <label for="" class="base-label m-b-24">Insurrance Start Date</label>
+            <div class="m-t-8 m-b-8">
+              <input class="base-input base-small" type="date" name="" id="" >
+              <div class="m-t-8" style="font-size:12px">Validity 365 days, will expire on :</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="btn-review m-t-32">Review & Confirm</button>
+  </div>
+</body>
+
+<style>
+.btn-size-large {
+  width: 242px;
+  height: 46px;
+  border-radius: 4px;
+}
+
+.btn-review {
+  width: 242px;
+  height: 46px;
+  border-radius: 4px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, #f7981c, #f76b1c);
+  font-family: NotoSans;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+.is-white {
+  color: #ffffff;
+}
+
+.card-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  position: relative;
+  width: 685px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-form .card-header {
+  position: relative;
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #0067b5;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-form .title {
+  font-family: NotoSans;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: normal;
+  color: #0067b5;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.card-form .card-footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.little-font {
+  position: absolute;
+  top: 20;
+  right: 10;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #4f1e85;
+}
+
+.card-form .card-header .card-title {
+  color: white;
+  margin-left: 10px;
+}
+
+</style>
+<script>
+$(document).ready(function() {
+  $("#countries").msDropdown();
+})
+</script>
+</html>
