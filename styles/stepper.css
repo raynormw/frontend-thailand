@@ -152,7 +152,7 @@
   .stepper {
     display: flex;
     flex-direction: column;
-    height: 6;
+    height: 88px;
   }
 
   .nav {
