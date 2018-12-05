@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+  <title></title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/stepper.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/confirm.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-top">
+      <div class="container header-container">
+      <div class="header-left grid-1">
+        <img class="img" src="img/aegon.png" alt="">
+      </div>
+      <div class="header-right grid-2">
+        <ul class="head-menu m-t-8">
+          <li><a href=""> <span class="shape-round">?</span></a></a></li>
+          <li><a href="">Help</a></li>
+          <li><a href="">เปลี่ยนภาษา</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stepper -->
+  <div class="stepper">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active completed">
+          <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab" aria-controls="stepper-step-1" role="tab" title="Step 1">
+            <span class="round-tab"><span class="round-inside"></span></span>
+            <div class="step-title">Applicant Info</div>
+          </a>
+        </li>
+        <li role="presentation" class="active completed">
+          <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2">
+            <span class="round-tab"><span class="round-inside"></span></span>
+            <div class="step-title">Vehicle Info</div>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3">
+            <span class="round-tab"><span class="round-inside"></span></span>
+            <div class="step-title">Confirm</div>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a class="persistant-disabled" href="#stepper-step-4" data-toggle="tab" aria-controls="stepper-step-4" role="tab" title="Complete">
+            <span class="round-tab"></span>
+            <div class="step-title">Payment</div>
+          </a>
+        </li>
+      </ul>
+    <div class="step-title-sp">
+        Step 2: Vehicle Info
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div class="sidebar">
+        <div class="grid-sidebar">
+          <div class="card m-b-24 p-b-8">
+            <div class="card-header">
+              <span class="card-title">Car Details</span>
+            </div>
+            <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
+              <table class="card-table">
+                <tr class="font-normal">
+                  <td class="p-b-8 p-t-8">Brand</td>
+                  <td>America</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">Model</td>
+                  <td>2</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">Year</td>
+                  <td>2009</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">CC</td>
+                  <td>xxxxx</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card m-b-24 p-b-8">
+            <div class="card-header">
+              <span class="card-title">Choosen Plan</span>
+            </div>
+            <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
+              <table class="card-table">
+                <tr class="">
+                  <td class="p-b-8 p-t-8"><img class="img-msig" src="img/msig.png"></td>
+                  <td>Plan Name</td>
+                </tr>
+                <tr class="border_bottom">
+                  <td class="p-b-8 p-t-8">Sum insured</td>
+                  <td>X</td>
+                </tr>
+                <tr class="border_bottom">
+                  <td class="p-b-8 p-t-8" colspan="2">With Compulsory insurance</td>
+                </tr>
+                <tr>
+                  <td class="p-t-8" colspan="2">Premium</td>
+                </tr>
+                <tr class="total">
+                  <td class="p-t-8">Total</td>
+                  <td>1,215 ฿</td>
+                </tr>
+                <tr>
+                  <td class="p-t-8">Private/ not for commercial use</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="main">
+      <div class="form" id="confirm">
+        <div class="main-top">
+          <div class="card-form m-t-24">
+            <div class="container">
+              <div class="edit">
+                Edit
+              </div>
+              <div class="title">
+                Vehicle Details
+              </div>
+              <div class="card-content">
+                <form action="">
+                  <ul>
+                    <li>Name:</li>
+                    <li>Date of birth:</li>
+                    <li>Mobile no:</li>
+                    <li>Email:</li>
+                    <li>National ID:</li>
+                    <li>Address:</li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card-form m-t-24">
+            <div class="container">
+              <div class="edit">
+                Edit
+              </div>
+              <div class="title">
+                Car Spec Identity
+              </div>
+              <div class="card-content">
+                <form action="">
+                  <ul>
+                    <li>Licence Plate:</li>
+                    <li>Registration:</li>
+                    <li>Province:</li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="check-form">
+            <ul>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">Aegon&apos;s Terms
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">All Details correct
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">Reffered to policy docs
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-space">
+              <button class="btn-review m-t-32">Proceed to OTP verification</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="grid-2">
+        <p class="footer-title">Help available, on Line, Email and calls:</p>
+        <div class="footer-content">
+          <p class="line-container">
+            <img src="img/line.png" alt="line_icon">
+            @aegonbrokerth
+          </p>
+          <p>
+            <span class="mdi mdi-email m-r-16"></span>
+            help@aegonbroker.co.th
+          </p>
+          <p>
+            <span class="mdi mdi-phone m-r-16"></span>
+            02 163 2820
+          </p>
+          <p class="footer-content-hour">
+            Mon-Fri. 9:00am - 7:00pm, except Public holidays
+          </p>
+        </div>
+      </div>
+      <div class="grid-1">
+        <p class="footer-title">Quick Links</p>
+        <div class="footer-content">
+          <p>FAQs</p>
+          <p>Purchase guide</p>
+          <p>Policy documents</p>
+          <p>Terms of use</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+      <div class="grid-1">
+        <p class="footer-title">Safe and secure payments</p>
+        <div class="footer-content">
+          <p>
+            <img src="img/visa.png" alt="visa_icon">
+            <img src="img/mastercard.png" alt="mastercard_icon">
+            <img src="img/american_express.png" alt="american_express_icon">
+            <img src="img/discover.png" alt="discover_icon">
+          </p>
+          <div class="footer-lock">
+            <span class="mdi mdi-lock"></span>
+            <div>
+              <p>Your details aren’t stored.</p>
+              <p>All information is encrypted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © Aegon Direct Non-life Insurance Broker - License No. ว00018/2553. All Rights Reserved.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<style>
+
+</style>
