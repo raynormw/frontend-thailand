@@ -15,8 +15,6 @@
 
 .form {
   margin-left: 56px;
-  display: flex;
-  flex-direction: column;
 }
 
 .main-top {
@@ -122,7 +120,7 @@
 } */
 
 .base-select {
-  width: 97px;
+  width: 191px;
   height: 40px;
   border-radius: 4px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
@@ -172,13 +170,27 @@
   margin-left: 10px;
 }
 
+/* Ipad / Tab */
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px)  {
+/* CSS */ 
+  .main {
+    flex: 2;
+  }
+
+  .card-form {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
  
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .main {
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
    flex: 1;
    width: 100%;
  }

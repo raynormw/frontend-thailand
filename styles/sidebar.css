@@ -169,9 +169,23 @@
   width: 60px;
 }
 
+/* Ipad / Tab  */
+
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px)  {
+/* CSS */ 
+  .sidebar {
+    flex: 1;
+  }
+  .grid-sidebar {
+    flex: 2;
+  }
+}
+
+/* Mobile Phone */
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
   .content {
-    /* margin-top: 0; */
+    margin-top: 0;
     height: 100%;
   }
   .sidebar {
@@ -184,3 +198,4 @@
     width: 95%;
   }
 }
+

@@ -1,0 +1,225 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link rel="stylesheet" href="styles/page.css">
+  <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<body style="background: #0067b5;">
+  <div class="form" id="confirm">
+    <div class="card-form">
+      <div class="container">
+        <div class="edit">
+          Edit
+        </div>
+        <div class="title">
+          Vehicle Details
+        </div>
+        <div class="card-content">
+          <form action="">
+            <ul>
+              <li>Name:</li>
+              <li>Date of birth:</li>
+              <li>Mobile no:</li>
+              <li>Email:</li>
+              <li>National ID:</li>
+              <li>Address:</li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="card-form m-t-24">
+      <div class="container">
+        <div class="edit">
+          Edit
+        </div>
+        <div class="title">
+          Car Spec Identity
+        </div>
+        <div class="card-content">
+          <form action="">
+            <ul>
+              <li>Licence Plate:</li>
+              <li>Registration:</li>
+              <li>Province:</li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="check-form">
+      <ul>
+        <li>
+          <div class="container">
+            <label id="check" class="check" onclick="toggleCheckbox()">Aegon&apos;s Terms
+              <input id="box" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <label id="check" class="check" onclick="toggleCheckbox()">All Details correct
+              <input id="box" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+        <li>
+          <div class="container">
+            <label id="check" class="check" onclick="toggleCheckbox()">Reffered to policy docs
+              <input id="box" type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <button class="btn-review m-t-32">Review & Confirm</button>
+  </div>
+</body>
+
+<style>
+
+.container{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+#confirm .card-form {
+  position: relative;
+  width: 685px;
+  padding: 16px 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: white;
+}
+
+#confirm .card-form .edit{
+  text-align: right;
+  font-size: 14px;
+  color: #0067b5;
+}
+
+#confirm .card-form .title {
+  font-size: 22px;
+  line-height: 32px;
+  color: #0067b5;
+}
+
+#confirm .card-form .card-content {
+  padding-top: 16px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #354052;
+}
+
+#confirm .card-form .card-content ul li:first-child {
+  padding-top: 0;
+}
+
+#confirm .card-form .card-content ul li {
+  padding-top: 8px;
+}
+
+#confirm .check-form ul {
+  display: flex;
+  width: 685px;
+  margin-top: 40px;
+}
+
+#confirm .check-form ul li {
+  flex: 1;
+  margin-left: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+#confirm .check-form ul li:first-child {
+  margin-left: 0;
+}
+
+#confirm .check-form .check {
+  display: block;
+  position: relative;
+  height: 17px;
+  line-height: 17px;
+  padding: 8px 0 8px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #354052;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#confirm .check-form .check input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#confirm .check-form .check .checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid #2ea2f8;
+}
+
+#confirm .check-form .check:hover input ~ .checkmark {
+  background: #ffffff;
+}
+
+#confirm .check-form .check input:checked ~ .checkmark {
+  background-color: #0067b5;
+}
+
+#confirm .check-form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#confirm .check-form .check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+#confirm .check-form .check input:checked {
+  color: #2ea2f8;
+}
+
+#confirm .check-form .check .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#confirm .btn-review {
+  width: 242px;
+  height: 46px;
+  border-radius: 4px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, #f7981c, #f76b1c);
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+</style>
+
+</html>

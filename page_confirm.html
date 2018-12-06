@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/stepper.css">
   <link rel="stylesheet" href="styles/sidebar.css">
-  <link rel="stylesheet" href="styles/vehicle_info.css">
+  <link rel="stylesheet" href="styles/confirm.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
@@ -43,15 +43,15 @@
             <div class="step-title">Applicant Info</div>
           </a>
         </li>
-        <li role="presentation" class="active">
+        <li role="presentation" class="active completed">
           <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2">
             <span class="round-tab"><span class="round-inside"></span></span>
             <div class="step-title">Vehicle Info</div>
           </a>
         </li>
-        <li role="presentation" class="disabled">
+        <li role="presentation" class="active">
           <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3">
-            <span class="round-tab"></span>
+            <span class="round-tab"><span class="round-inside"></span></span>
             <div class="step-title">Confirm</div>
           </a>
         </li>
@@ -63,7 +63,7 @@
         </li>
       </ul>
     <div class="step-title-sp">
-        Step 2: Vehicle Info
+        Step 3: Confirm
     </div>
   </div>
 
@@ -129,37 +129,80 @@
         </div>
     </div>
     <div class="main">
-      <div class="form">
+      <div class="form" id="confirm">
         <div class="main-top">
-          <div class="card-form full-length">
-            <div class="title m-l-24 m-t-24 p-t-24">
-              Vehicle Details
-            </div>
-            <div class="card-content m-t-8 m-r-16 m-l-24 m-b-8 p-b-24 p-r-24">
-              <form action="">
-                <label for="" class="base-label m-b-24">License Plate</label>
-                <div class="m-t-8 m-b-8">
-                  <input class="base-input base-small" type="text" name="" id="" placeholder="XX XXXX">
-                </div>
-                <label for="" class="base-label m-b-24">Registered in Province</label>
-                <div class="m-t-8 m-b-8">
-                  <input class="base-input base-large" type="text" name="" id="" placeholder="XX XXXX">
-                </div>
-                <label for="" class="base-label m-b-24">Chassis No</label>
-                <div class="m-t-8 m-b-8">
-                  <input class="base-input base-small" type="text" name="" id="" placeholder="XXXXXX">
-                </div>
-                <label for="" class="base-label m-b-24">Insurrance Start Date</label>
-                <div class="m-t-8 m-b-8">
-                  <input class="base-input base-small" type="date" name="" id="" >
-                  <div class="m-t-8" style="font-size:12px">Validity 365 days, will expire on :</div>
-                </div>
-              </form>
+          <div class="card-form m-t-24">
+            <div class="container">
+              <div class="edit">
+                Edit
+              </div>
+              <div class="title">
+                Vehicle Details
+              </div>
+              <div class="card-content">
+                <form action="">
+                  <ul>
+                    <li>Name:</li>
+                    <li>Date of birth:</li>
+                    <li>Mobile no:</li>
+                    <li>Email:</li>
+                    <li>National ID:</li>
+                    <li>Address:</li>
+                  </ul>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-space">
-          <button class="btn-review m-t-32">Review & Confirm</button>
+          <div class="card-form m-t-24">
+            <div class="container">
+              <div class="edit">
+                Edit
+              </div>
+              <div class="title">
+                Car Spec Identity
+              </div>
+              <div class="card-content">
+                <form action="">
+                  <ul>
+                    <li>Licence Plate:</li>
+                    <li>Registration:</li>
+                    <li>Province:</li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="check-form">
+            <ul>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">Aegon&apos;s Terms
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">All Details correct
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <label id="check" class="check" onclick="toggleCheckbox()">Reffered to policy docs
+                    <input id="box" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-space">
+              <button class="btn-review m-t-32">Proceed to OTP verification</button>
+          </div>
         </div>
       </div>
     </div>
