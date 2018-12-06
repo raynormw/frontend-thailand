@@ -1,4 +1,13 @@
 
+.content {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  background: #f1f4f8;
+  overflow: hidden;
+  height: 835px;
+}
+
 .main {
   flex: 5;
   width: 70%;
@@ -204,6 +213,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  height: auto;
+  margin-top: 0;
 }
 .main {
    flex: 1;
