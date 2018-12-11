@@ -1,0 +1,60 @@
+.main .form .card-form {
+  width: 90%;
+}
+.main .form .card-form .card-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .form .card-content form div {
+  padding: 8px 0;
+}
+.main .card-form .title {
+  font-family: NotoSans;
+  font-size: 22px;
+  line-height: 1.45;
+  color: #0067b5;
+}
+.main .form .card-content .base-input {
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #ececee;
+  padding: 12px 0.500em;
+}
+.main .form .card-content .base-label {
+  font-size: 12px;
+  line-height: 1.75;
+  color: #354052;
+}
+.main .form .card-content .base-small {
+  width: 33%;
+}
+.main .form .card-content .base-large {
+  width: 50%;
+}
+
+/* Ipad / Tab */
+@media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
+(max-device-width: 1024px)  {
+  .main {
+    flex: 2;
+  }
+  .main .card-form {
+    width: 90%;
+  }
+  .content .main .form .card-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
+  .main .card-form {
+   width: 100%;
+ }
+ .main .form .card-content .base-small {
+   width: 50%;
+ }
+ .main .form .card-content .base-large {
+   width: 75%;
+ }
+}

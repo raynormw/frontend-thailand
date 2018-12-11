@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 145px;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -34,7 +34,6 @@
 
 .stepper .nav-tabs > li {
   width: 25%;
-  /* position: relative; */
 }
 
 .stepper .nav-tabs [data-toggle='tab'] {
@@ -236,5 +235,11 @@
     border-radius: 15px;
     background: #0067b5;
     margin: 2px;
+  }
+}
+
+@media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
+  .stepper{
+    padding: 20px 0;
   }
 }
