@@ -7,9 +7,11 @@
   <title></title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/spacing.css">
-  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/stepper.css">
-  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/confirm.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
@@ -67,8 +69,7 @@
 
   <!-- Content -->
   <div class="content">
-    <div class="container">
-      <div class="sidebar">
+    <div class="sidebar">
         <div class="grid-sidebar">
           <div class="card m-b-24 p-b-8">
             <div class="card-header">
@@ -126,11 +127,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="form" id="confirm">
-          <div class="card-form">
-            <div class="card-container">
+    </div>
+    <div class="main">
+      <div class="form" id="confirm">
+        <div class="main-top">
+          <div class="card-form m-t-24">
+            <div class="container">
               <div class="edit">
                 Edit
               </div>
@@ -152,7 +154,7 @@
             </div>
           </div>
           <div class="card-form m-t-24">
-            <div class="card-container">
+            <div class="container">
               <div class="edit">
                 Edit
               </div>
@@ -173,7 +175,7 @@
           <div class="check-form">
             <ul>
               <li>
-                <div class="check-container">
+                <div class="container">
                   <label id="check" class="check" onclick="toggleCheckbox()">Aegon&apos;s Terms
                     <input id="box" type="checkbox">
                     <span class="checkmark"></span>
@@ -181,7 +183,7 @@
                 </div>
               </li>
               <li>
-                <div class="check-container">
+                <div class="container">
                   <label id="check" class="check" onclick="toggleCheckbox()">All Details correct
                     <input id="box" type="checkbox">
                     <span class="checkmark"></span>
@@ -189,7 +191,7 @@
                 </div>
               </li>
               <li>
-                <div class="check-container">
+                <div class="container">
                   <label id="check" class="check" onclick="toggleCheckbox()">Reffered to policy docs
                     <input id="box" type="checkbox">
                     <span class="checkmark"></span>
@@ -203,12 +205,12 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <div class="container footer-container">
+    <div class="footer-container">
       <div class="grid-2">
         <p class="footer-title">Help available, on Line, Email and calls:</p>
         <div class="footer-content">

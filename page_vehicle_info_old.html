@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-  <title>Template</title>
+  <title></title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/spacing.css">
-  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/stepper.css">
-  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/vehicle_info.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
 </head>
@@ -22,7 +24,7 @@
         <img class="img" src="img/aegon.png" alt="">
       </div>
       <div class="header-right grid-2">
-        <ul class="head-menu">
+        <ul class="head-menu m-t-8">
           <li><a href=""> <span class="shape-round">?</span></a></a></li>
           <li><a href="">Help</a></li>
           <li><a href="">เปลี่ยนภาษา</a></li>
@@ -67,99 +69,97 @@
 
   <!-- Content -->
   <div class="content">
-    <div class="container">
-      <div class="sidebar">
-          <div class="grid-sidebar">
-            <div class="card">
-              <div class="card-header">
-                <span class="card-title">Car Details</span>
-              </div>
-              <div class="card-content">
-                <table class="card-table">
-                  <tr class="font-normal">
-                    <td>Brand</td>
-                    <td>America</td>
-                  </tr>
-                  <tr>
-                    <td>Model</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>Year</td>
-                    <td>2009</td>
-                  </tr>
-                  <tr>
-                    <td>CC</td>
-                    <td>xxxxx</td>
-                  </tr>
-                </table>
-              </div>
+    <div class="sidebar">
+        <div class="grid-sidebar">
+          <div class="card m-b-24 p-b-8">
+            <div class="card-header">
+              <span class="card-title">Car Details</span>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <span class="card-title">Choosen Plan</span>
-              </div>
-              <div class="card-content">
-                <table class="card-table">
-                  <tr class="">
-                    <td>
-                      <img class="img-msig" src="img/msig.png">
-                    </td>
-                    <td>Plan Name</td>
-                  </tr>
-                  <tr class="border_bottom">
-                    <td>Sum insured</td>
-                    <td>X</td>
-                  </tr>
-                  <tr class="border_bottom">
-                    <td colspan="2">With Compulsory insurance</td>
-                  </tr>
-                  <tr>
-                    <td class="p-t-8" colspan="2">Premium</td>
-                  </tr>
-                  <tr class="total">
-                    <td>Total</td>
-                    <td>1,215 ฿</td>
-                  </tr>
-                  <tr>
-                    <td class="p-t-8">Private/ not for commercial use</td>
-                  </tr>
-                </table>
-              </div>
+            <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
+              <table class="card-table">
+                <tr class="font-normal">
+                  <td class="p-b-8 p-t-8">Brand</td>
+                  <td>America</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">Model</td>
+                  <td>2</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">Year</td>
+                  <td>2009</td>
+                </tr>
+                <tr class="">
+                  <td class="p-b-8 p-t-8">CC</td>
+                  <td>xxxxx</td>
+                </tr>
+              </table>
             </div>
           </div>
-      </div>
-      <div class="main">
-        <div class="form">
-          <div class="card-form">
-            <div class="card-container">
-              <div class="title">
-                Vehicle Details
-              </div>
-              <div class="card-content">
-                <form action="">
-                  <label for="" class="base-label">License Plate</label>
-                  <div>
-                    <input class="base-input base-small" type="text" name="" id="" placeholder="XX XXXX">
-                  </div>
-                  <label for="" class="base-label">Registered in Province</label>
-                  <div>
-                    <input class="base-input base-large" type="text" name="" id="" placeholder="XX XXXX">
-                  </div>
-                  <label for="" class="base-label">Chassis No</label>
-                  <div>
-                    <input class="base-input base-small" type="number" name="" id="" placeholder="XXXXXX">
-                  </div>
-                  <label for="" class="base-label">Insurrance Start Date</label>
-                  <div>
-                    <input class="base-input base-small" type="date" name="" id="" >
-                  </div>
-                  <div style="font-size:12px">Validity 365 days, will expire on :</div>
-                </form>
-              </div>
+          <div class="card m-b-24 p-b-8">
+            <div class="card-header">
+              <span class="card-title">Choosen Plan</span>
+            </div>
+            <div class="card-content m-t-8 m-r-8 m-l-8 m-b-8">
+              <table class="card-table">
+                <tr class="">
+                  <td class="p-b-8 p-t-8"><img class="img-msig" src="img/msig.png"></td>
+                  <td>Plan Name</td>
+                </tr>
+                <tr class="border_bottom">
+                  <td class="p-b-8 p-t-8">Sum insured</td>
+                  <td>X</td>
+                </tr>
+                <tr class="border_bottom">
+                  <td class="p-b-8 p-t-8" colspan="2">With Compulsory insurance</td>
+                </tr>
+                <tr>
+                  <td class="p-t-8" colspan="2">Premium</td>
+                </tr>
+                <tr class="total">
+                  <td class="p-t-8">Total</td>
+                  <td>1,215 ฿</td>
+                </tr>
+                <tr>
+                  <td class="p-t-8">Private/ not for commercial use</td>
+                </tr>
+              </table>
             </div>
           </div>
-          <button class="btn-review">Review & Confirm</button>
+        </div>
+    </div>
+    <div class="main">
+      <div class="form">
+        <div class="main-top">
+          <div class="card-form full-length">
+            <div class="title m-l-24 m-t-24 p-t-24">
+              Vehicle Details
+            </div>
+            <div class="card-content m-t-8 m-r-16 m-l-24 m-b-8 p-b-24 p-r-24">
+              <form action="">
+                <label for="" class="base-label m-b-24">License Plate</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="text" name="" id="" placeholder="XX XXXX">
+                </div>
+                <label for="" class="base-label m-b-24">Registered in Province</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-large" type="text" name="" id="" placeholder="XX XXXX">
+                </div>
+                <label for="" class="base-label m-b-24">Chassis No</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="number" name="" id="" placeholder="XXXXXX">
+                </div>
+                <label for="" class="base-label m-b-24">Insurrance Start Date</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="date" name="" id="" >
+                  <div class="m-t-8" style="font-size:12px">Validity 365 days, will expire on :</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="btn-space">
+          <button class="btn-review m-t-32">Review & Confirm</button>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@
 
   <!-- Footer -->
   <div class="footer">
-    <div class="container footer-container">
+    <div class="footer-container">
       <div class="grid-2">
         <p class="footer-title">Help available, on Line, Email and calls:</p>
         <div class="footer-content">

@@ -33,6 +33,97 @@
   width: 50%;
 }
 
+.check-form ul {
+  display: flex;
+  width: 685px;
+  margin-top: 40px;
+}
+
+.check-form ul li {
+  flex: 1;
+  margin-left: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.check-form ul li:first-child {
+  margin-left: 0;
+}
+
+.check-form .check-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.check-form .check {
+  display: block;
+  position: relative;
+  height: 17px;
+  line-height: 17px;
+  padding: 8px 0 8px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #354052;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-form .check input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+ .check-form .check .checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid #2ea2f8;
+}
+
+ .check-form .check:hover input ~ .checkmark {
+  background: #ffffff;
+}
+
+ .check-form .check input:checked ~ .checkmark {
+  background-color: #0067b5;
+}
+
+ .check-form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+ .check-form .check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+ .check-form .check input:checked {
+  color: #2ea2f8;
+}
+
+ .check-form .check .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /* Ipad / Tab */
 @media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
 (max-device-width: 1024px)  {
@@ -48,13 +139,36 @@
 }
 
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
-  .main .card-form {
+  /* .main .card-form {
    width: 100%;
- }
+ } */
+ .main .form .card-form {
+  width: 100%;
+}
  .main .form .card-content .base-small {
    width: 50%;
  }
  .main .form .card-content .base-large {
    width: 75%;
  }
+
+  .check-form ul{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+    margin-top: 0;
+  }
+
+  .check-form ul li { 
+    margin-left: 0;
+    margin-top: 16px;
+    padding: 8px 16px;
+  }
+
+  .check-form .check-container {
+    width: 100%;
+  }
+  .check-form .check {
+    display: flex;
+  }
 }
