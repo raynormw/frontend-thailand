@@ -6,9 +6,10 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.main .form .card-content form div {
-  padding: 8px 0;
+.main .form .card-content form {
+  margin: 8px 0;
 }
+
 .main .card-form .title {
   font-family: NotoSans;
   font-size: 22px;
@@ -124,6 +125,70 @@
   transform: rotate(45deg);
 }
 
+.form-xp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.base-select {
+  width: 10%;
+  height: 40px;
+  border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.base-select2 {
+  width: 111px;
+  /* height: 40px; */
+}
+
+.dd {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding:3px 0;    
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+
+.base-label {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #354052;
+}
+
+.base-small {
+  width: 181px;
+}
+
+.base-medium {
+  width: 254px;
+}
+
+.base-large {
+  width: 332px;
+}
+
+.text-notif {
+  font-family: NotoSans;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
 /* Ipad / Tab */
 @media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
 (max-device-width: 1024px)  {
@@ -152,6 +217,11 @@
    width: 75%;
  }
 
+ .grid-2 {
+   flex: 5;
+ }
+
+ 
   .check-form ul{
     display: flex;
     flex-flow: column wrap;
@@ -171,4 +241,44 @@
   .check-form .check {
     display: flex;
   }
+
+  .form-xp {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .address {
+    flex-flow: column wrap; 
+  }
+  
+  .base-select-xp {
+    flex: 1;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .base-select-address-xp {
+    margin-top: 8px;
+  }
+  
+  .base-input-xp {
+    flex: 1 1 auto;
+    margin-bottom: 8px;
+  }
+  
+  .ddTitle, .borderRadiusTp {
+    height: 91%;
+  }
+  
+  .ddTitleText {
+    line-height: 2;
+  }
+  
+  .dd, .ddcommon, .borderRadius {
+    flex: 2;
+    margin-right: 8px;
+   height:91%;
+  }
+  
 }

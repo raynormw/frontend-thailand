@@ -335,6 +335,10 @@
   }
 
 
+  .grid-sidebar {
+    margin-top: 24px;
+  }
+
   .btn-review {
     display: block;
     margin: 30px auto 0;
