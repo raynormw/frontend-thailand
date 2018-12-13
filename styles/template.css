@@ -6,9 +6,10 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.main .form .card-content form div {
-  padding: 8px 0;
+.main .form .card-content form {
+  margin: 8px 0;
 }
+
 .main .card-form .title {
   font-family: NotoSans;
   font-size: 22px;
@@ -33,6 +34,161 @@
   width: 50%;
 }
 
+.check-form ul {
+  display: flex;
+  width: 685px;
+  margin-top: 40px;
+}
+
+.check-form ul li {
+  flex: 1;
+  margin-left: 8px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.check-form ul li:first-child {
+  margin-left: 0;
+}
+
+.check-form .check-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.check-form .check {
+  display: block;
+  position: relative;
+  height: 17px;
+  line-height: 17px;
+  padding: 8px 0 8px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #354052;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-form .check input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+ .check-form .check .checkmark {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #ffffff;
+  border: 1px solid #2ea2f8;
+}
+
+ .check-form .check:hover input ~ .checkmark {
+  background: #ffffff;
+}
+
+ .check-form .check input:checked ~ .checkmark {
+  background-color: #0067b5;
+}
+
+ .check-form .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+ .check-form .check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+ .check-form .check input:checked {
+  color: #2ea2f8;
+}
+
+ .check-form .check .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-xp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.base-select {
+  width: 10%;
+  height: 40px;
+  border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+.base-select2 {
+  width: 111px;
+  /* height: 40px; */
+}
+
+.dd {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding:3px 0;    
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+
+.base-label {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #354052;
+}
+
+.base-small {
+  width: 181px;
+}
+
+.base-medium {
+  width: 254px;
+}
+
+.base-large {
+  width: 332px;
+}
+
+.text-notif {
+  font-family: NotoSans;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
 /* Ipad / Tab */
 @media screen and (min-width: 768px) and (max-width: 1024px), (min-device-width: 768px) and
 (max-device-width: 1024px)  {
@@ -48,13 +204,81 @@
 }
 
 @media screen and (max-width: 320px), (min-device-width: 320px) and (max-device-width: 480px) {
-  .main .card-form {
+  /* .main .card-form {
    width: 100%;
- }
+ } */
+ .main .form .card-form {
+  width: 100%;
+}
  .main .form .card-content .base-small {
    width: 50%;
  }
  .main .form .card-content .base-large {
    width: 75%;
  }
+
+ .grid-2 {
+   flex: 5;
+ }
+
+ 
+  .check-form ul{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+    margin-top: 0;
+  }
+
+  .check-form ul li { 
+    margin-left: 0;
+    margin-top: 16px;
+    padding: 8px 16px;
+  }
+
+  .check-form .check-container {
+    width: 100%;
+  }
+  .check-form .check {
+    display: flex;
+  }
+
+  .form-xp {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .address {
+    flex-flow: column wrap; 
+  }
+  
+  .base-select-xp {
+    flex: 1;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .base-select-address-xp {
+    margin-top: 8px;
+  }
+  
+  .base-input-xp {
+    flex: 1 1 auto;
+    margin-bottom: 8px;
+  }
+  
+  .ddTitle, .borderRadiusTp {
+    height: 91%;
+  }
+  
+  .ddTitleText {
+    line-height: 2;
+  }
+  
+  .dd, .ddcommon, .borderRadius {
+    flex: 2;
+    margin-right: 8px;
+   height:91%;
+  }
+  
 }

@@ -7,11 +7,19 @@
   <title></title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/spacing.css">
-  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/stepper.css">
-  <link rel="stylesheet" href="styles/template.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/applicant.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   <link href="https://cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/flags.css" />
+  <link rel="stylesheet" type="text/css" href="country_dropdown/css/msdropdown/dd.css" />
+  <script src="country_dropdown/js/jquery/jquery-1.8.2.min.js"></script>
+  <script src="country_dropdown/js/msdropdown/jquery.dd.min.js"></script>
 </head>
 
 <body>
@@ -35,21 +43,21 @@
   <!-- Stepper -->
   <div class="stepper">
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active completed">
+        <li role="presentation" class="active">
           <a class="persistant-disabled" href="#stepper-step-1" data-toggle="tab" aria-controls="stepper-step-1" role="tab" title="Step 1">
             <span class="round-tab"><span class="round-inside"></span></span>
             <div class="step-title">Applicant Info</div>
           </a>
         </li>
-        <li role="presentation" class="active completed">
+        <li role="presentation" class="disabled">
           <a class="persistant-disabled" href="#stepper-step-2" data-toggle="tab" aria-controls="stepper-step-2" role="tab" title="Step 2">
-            <span class="round-tab"><span class="round-inside"></span></span>
+            <span class="round-tab"></span>
             <div class="step-title">Vehicle Info</div>
           </a>
         </li>
-        <li role="presentation" class="active">
+        <li role="presentation" class="disabled">
           <a class="persistant-disabled" href="#stepper-step-3" data-toggle="tab" aria-controls="stepper-step-3" role="tab" title="Step 3">
-            <span class="round-tab"><span class="round-inside"></span></span>
+            <span class="round-tab"></span>
             <div class="step-title">Confirm</div>
           </a>
         </li>
@@ -61,14 +69,13 @@
         </li>
       </ul>
     <div class="step-title-sp">
-        Step 3: Confirm
+        Step 1: Applicant Info
     </div>
   </div>
 
   <!-- Content -->
   <div class="content">
-    <div class="container">
-      <div class="sidebar">
+    <div class="sidebar">
         <div class="grid-sidebar">
           <div class="card m-b-24 p-b-8">
             <div class="card-header">
@@ -126,89 +133,98 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="form" id="confirm">
-          <div class="card-form">
-            <div class="card-container">
-              <div class="edit">
-                Edit
-              </div>
-              <div class="title">
-                Vehicle Details
-              </div>
-              <div class="card-content">
-                <form action="">
-                  <ul>
-                    <li>Name:</li>
-                    <li>Date of birth:</li>
-                    <li>Mobile no:</li>
-                    <li>Email:</li>
-                    <li>National ID:</li>
-                    <li>Address:</li>
-                  </ul>
-                </form>
-              </div>
+    </div>
+    <div class="main">
+      <div class="form">
+        <div class="main-top">
+          <div class="card-form full-length ">
+            <div class="title m-l-24 m-t-24 p-t-24">
+              Applicant Detail
+            </div>
+            <div class="card-content m-t-8 m-r-16 m-l-24 m-b-8 p-b-32 p-r-24">
+              <form action="">
+                <label for="" class="base-label m-b-24">Owner of Vehicle</label>
+                <div class="form-xp m-t-8 m-b-8">
+                  <select class="base-select base-select-xp" name="" id="">
+                    <option value="" selected disabled>Title</option>
+                    <option value="">Mr</option>
+                    <option value="">Ms</option>
+                    <option value="">Mrs</option>
+                  </select>
+                  <input class="base-input base-input-xp base-small" type="text" name="" id="" placeholder="First name">
+                  <input class="base-input base-small" type="text" name="" id="" placeholder="Last name">
+                </div>
+                <label for="" class="base-label m-b-24">Date of Birth</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="date" name="" id="" placeholder="Last name">
+                </div>
+                <label for="" class="base-label m-b-24">National ID</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="text" name="" id="" placeholder="ID Number">
+                </div>
+                <div class="">
+                  <div class="m-r-32">
+                    <label for="" class="base-label m-b-24">Mobile No</label>
+                    <div class="form-xp m-t-8 m-b-8">
+                      <select name="countries" id="countries" class="base-select2 ">
+                        <option value='id' data-image="country_dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag id">+62</option>
+                        <option value='th' data-image="country_dropdown/images/msdropdown/icons/blank.gif" data-imagecss="flag th">+66</option>
+                      </select>
+                      <input class="base-input base-input-xp base-medium" type="email" name="" id="" placeholder="+66">
+                      <span class="mobile-info">we will send OTP to this verification</span>
+                    </div>
+                  </div>
+                </div>
+                <label for="" class="base-label m-b-24">Email</label>
+                <div class="m-t-8 m-b-8">
+                  <input class="base-input base-small" type="text" name="" id="" placeholder="Email ID">
+                </div>
             </div>
           </div>
-          <div class="card-form m-t-24">
-            <div class="card-container">
-              <div class="edit">
-                Edit
+          <div class="card-form full-length">
+            <div class="title m-l-24 m-t-24 p-t-24">
+              Address
+            </div>
+            <div class="card-content m-t-8 m-r-24 m-l-24 m-b-8 p-b-32">
+              <div class="address m-t-8 m-b-8">
+                <input class="base-input base-large m-r-8" type="text" name="" id="" placeholder="Address 1">
+                <input class="base-input base-large m-r-8" type="text" name="" id="" placeholder="Address 2">
               </div>
-              <div class="title">
-                Car Spec Identity
+              <div class="address m-t-8 m-b-8">
+                <input class="base-input base-large m-r-8" type="text" name="" id="" placeholder="Address 3">
+                <input class="base-input base-large m-r-8" type="text" name="" id="" placeholder="Address 4">
               </div>
-              <div class="card-content">
-                <form action="">
-                  <ul>
-                    <li>Licence Plate:</li>
-                    <li>Registration:</li>
-                    <li>Province:</li>
-                  </ul>
-                </form>
+              <div class="address m-t-8 m-b-8">
+                <select name="province" id="province" class="base-select base-select-address-xp m-r-8">
+                  <option>Province</option>
+                </select>
+                <select name="district" id="district" class="base-select base-select-address-xp m-r-8">
+                  <option>District</option>
+                </select>
+                <select name="sub_district" id="sub_district" class="base-select base-select-address-xp m-r-8">
+                  <option>Sub District</option>
+                </select>
+              </div>
+              <div>
+                <input class="base-input base-zipcode" type="text" name="" id="" placeholder="Zip Code">
+                <input type="checkbox" name="" id=""><span class="checkbox-title">Send Hard Copy</span>
               </div>
             </div>
-          </div>
-          <div class="check-form">
-            <ul>
-              <li>
-                <div class="check-container">
-                  <label id="check" class="check" onclick="toggleCheckbox()">Aegon&apos;s Terms
-                    <input id="box" type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="check-container">
-                  <label id="check" class="check" onclick="toggleCheckbox()">All Details correct
-                    <input id="box" type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="check-container">
-                  <label id="check" class="check" onclick="toggleCheckbox()">Reffered to policy docs
-                    <input id="box" type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="btn-space">
-              <button class="btn-review m-t-32">Proceed to OTP verification</button>
           </div>
         </div>
+        <div class="m-t-8 text-notif">Please fill carefully. This is where you'll get hard copy.</div>
+       
+        <div class="btn-space">
+            <button class="btn-review m-t-32">Review & Confirm</button>
+          </div>
+        </form>
       </div>
-    </div> 
+    </div>
   </div>
 
   <!-- Footer -->
   <div class="footer">
-    <div class="container footer-container">
+    <div class="footer-container">
       <div class="grid-2">
         <p class="footer-title">Help available, on Line, Email and calls:</p>
         <div class="footer-content">
@@ -268,6 +284,8 @@
 
 </html>
 
-<style>
-
-</style>
+<script>
+  $(document).ready(function () {
+    $("#countries").msDropdown();
+  })
+</script>
